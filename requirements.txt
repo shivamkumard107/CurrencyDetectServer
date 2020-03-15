@@ -1,3 +1,4 @@
+python3-tk==0.0.0
 opencv-python==3.1.0.4
 gTTS==2.1.1
 playsound==1.2.2

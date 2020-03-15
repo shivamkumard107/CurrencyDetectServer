@@ -12,7 +12,9 @@ from utils import *
 
 
 def helper(filename):
-    from matplotlib import pyplot as plt
+    import matplotlib
+    matplotlib.use('agg')
+    import matplotlib.pyplot as plt
 
     import subprocess
     from gtts import gTTS
