@@ -8,3 +8,4 @@ Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
 gunicorn==19.9.0
+matplotlib==2.0.0
