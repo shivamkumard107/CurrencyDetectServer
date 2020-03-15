@@ -10,7 +10,6 @@
 import cv2
 import math
 import numpy as np
-import matplotlib.pyplot as plt
 from pprint import pprint
 
 
@@ -147,8 +146,6 @@ def harris_edge(image):
 def histogram(image):
 	hist = cv2.calcHist([image], [0], None, [256], [0, 256])
 	# cv2.calcHist(images, channels, mask, histSize, ranges[, hist[, accumulate]]) 
-	plt.plot(hist)
-	plt.show()
 
 
 # fast fourier transform
@@ -157,13 +154,7 @@ def fourier(image):
 	fshift = np.fft.fftshift(f)
 	magnitude_spectrum = 20 * np.log(np.abs(fshift))
 
-	plt.subplot(121), plt.imshow(image, cmap='gray')
-	plt.title('Input Image'), plt.xticks([]), plt.yticks([])
 
-	plt.subplot(122), plt.imshow(magnitude_spectrum, cmap='gray')
-	plt.title('FFT'), plt.xticks([]), plt.yticks([])
-
-	plt.show()
 
 
 # calculate scale and fit into display
