@@ -8,7 +8,7 @@
 # 	Figure out how to use contours
 # 		Currently detects inner rect -> detect outermost rectangle
 # 	Try using video stream from android phone
-from utils import *
+from utils import cv2, read_img
 
 
 def helper(filename):
