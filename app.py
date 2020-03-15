@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 import flask
 import werkzeug
-from detect import *
 
 app = Flask(__name__)
 
@@ -11,7 +10,7 @@ def check():
     return 'OK'
 
 
-@app.route('/post/', methods=['POST'])
+@app.route('/post', methods=['POST'])
 def post_something():
     param = request.form.get('name')
     print(param)
