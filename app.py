@@ -40,6 +40,7 @@ def handle_request():
         imagefile.save(filename)
         file_name = filename
         image_num = image_num + 1
+    from detect import helper
     note = helper(file_name)
     print(note)
     if note != -1:
