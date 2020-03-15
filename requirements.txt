@@ -1,3 +1,4 @@
+opencv-python==3.1.0.0
 gTTS==2.1.1
 playsound==1.2.2
 Click==7.0
