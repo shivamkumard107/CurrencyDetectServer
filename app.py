@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import flask
 import werkzeug
-from detect import *
+# from detect import *
 
 app = Flask(__name__)
 
