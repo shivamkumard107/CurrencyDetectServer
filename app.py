@@ -42,7 +42,7 @@ def handle_request():
         image_num = image_num + 1
     from detect import helper
     note = helper(file_name)
-    print(note)
+    print("Detected Currency: ", note)
     if note != -1:
         return jsonify({
             "note": note,
