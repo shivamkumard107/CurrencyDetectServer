@@ -6,3 +6,5 @@ env
 p3env
 .vscode
 *.pyc
+audio
+files
