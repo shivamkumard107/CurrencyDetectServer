@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import flask
 import werkzeug
+import re
 # from detect import *
 
 app = Flask(__name__)
@@ -42,10 +43,30 @@ def handle_request():
         image_num = image_num + 1
     from detect import helper
     note = helper(file_name)
-    print("Detected Currency: ", note)
-    if note != -1:
+    note += ".jpg"
+    print("Detected note: ", note)
+    currency = ""
+    if(re.findall(".*[2][0][0][0].*", note)):
+        currency = "2000"
+    elif(re.findall(".*[2][0][0][^0].*", note)):
+        currency = "200"
+    elif(re.findall(".*[2][0][^0].*", note)):
+        currency = "20"
+    elif(re.findall(".*[1][0][0][^0].*", note)):
+        currency = "100"
+    elif(re.findall(".*[1][0][^0].*", note)):
+        currency = "10"
+    elif(re.findall(".*[5][0][0].*", note)):
+        currency = "500"
+    elif(re.findall(".*[5][0][^0].*", note)):
+        currency = "50"
+    else:
+        currency = "-1"
+    
+    print("Detected Currency: ", currency)
+    if currency != "-1":
         return jsonify({
-            "note": note,
+            "note": currency
         })
     else:
         return jsonify({
