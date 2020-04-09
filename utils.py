@@ -1,4 +1,5 @@
 #!usr/bin/env python
+# -*- coding: utf-8 -*-
 # @Date:	2017-03-22
 
 # UE14CS348 Digital Image Processing Mini Project
