@@ -5,4 +5,4 @@ key-notes
 env
 p3env
 .vscode
-.pyc
+*.pyc
