@@ -34,7 +34,7 @@ Note: Download the __files__ folder on this drive
     `python app.py`
     
 
-## Running the tests
+### Running the tests
 
 After running app.py, the flask server will be running at port 4555.
 
@@ -48,10 +48,10 @@ Make Request through Postman
 
 <img src="https://github.com/shivamkumard107/CurrencyDetectServer/blob/master/assets/postman.png" width="700" height="160" />
 
-## Android
+### Android
 There is an android app made to communicate with the server. Install the app via Android studio or install the apk given in [repository](https://github.com/shivamkumard107/CurrencyDetection) README
 
-## Improving Accuracy
+### Improving Accuracy
 
 To get better results increase the number of images of each note type covering different image conditions like background lightning and angle. Concurrently change the dictionary in detect.py or if the dataset is very large you can use a for loop for creating dictionary using glob.
 
