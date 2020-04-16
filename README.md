@@ -69,3 +69,7 @@ Demo: https://drive.google.com/open?id=1XNjrgGH8JMGXbBmHN6x6_YorIFbFAa2-
 * **Saurabh Pandey** - *Initial work* - [Saurabh528](https://github.com/Saurabh528)
 
 See also the list of [contributors](https://github.com/shivamkumard107/Indian-Currency) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/shivamkumard107/CurrencyDetectServer/blob/master/LICENSE) file for details
